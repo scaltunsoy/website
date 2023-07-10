@@ -5,8 +5,8 @@ import { ExampleMusicApp } from '@components/themes/ExampleMusicApp';
 
 export default function ExamplePage() {
   return (
-    <Box p="9">
-      <Theme grayScale="slate" accentScale="red" appearance="light">
+    <Box asChild p="9">
+      <Theme grayScale="slate" accentScale="green" appearance="dark" radius="large">
         <ExampleMusicApp />
       </Theme>
     </Box>

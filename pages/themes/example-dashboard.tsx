@@ -6,7 +6,7 @@ import { ExampleDashboard } from '@components/themes/ExampleDashboard';
 
 export default function ExamplePage() {
   return (
-    <Box p="9">
+    <Box asChild p="9">
       <Theme grayScale="mauve">
         <ExampleDashboard />
       </Theme>

@@ -1185,12 +1185,12 @@ export const ExampleEcommerce = () => {
                   'Shorts #22',
                   'Shoes #13',
                 ].map((product) => (
-                  <>
+                  <React.Fragment key={product}>
                     <Link key={product} highContrast style={{ marginRight: 6 }}>
                       {product}
                     </Link>
                     <wbr />
-                  </>
+                  </React.Fragment>
                 ))}
 
                 <Text style={{ marginRight: 6 }}>Women’s</Text>
@@ -1208,12 +1208,12 @@ export const ExampleEcommerce = () => {
                   'Glasses #26',
                   'Perfume #27',
                 ].map((product) => (
-                  <>
+                  <React.Fragment key={product}>
                     <Link key={product} highContrast style={{ marginRight: 6 }}>
                       {product}
                     </Link>
                     <wbr />
-                  </>
+                  </React.Fragment>
                 ))}
               </Box>
             </Text>
