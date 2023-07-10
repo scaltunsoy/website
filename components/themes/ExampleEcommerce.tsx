@@ -48,7 +48,7 @@ export const ExampleEcommerce = () => {
               src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=560&h=424&q=80"
               width="280"
               height="212"
-              style={{ borderRadius: 'var(--br-1)' }}
+              style={{ borderRadius: 'var(--radius-1)' }}
             />
           </Flex>
 
@@ -76,10 +76,10 @@ export const ExampleEcommerce = () => {
               width="280"
               height="270"
               src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=560&h=540&q=80"
-              style={{ borderRadius: 'var(--br-1)' }}
+              style={{ borderRadius: 'var(--radius-1)' }}
             />
 
-            <Theme appearance="light" asChild style={{ borderRadius: 'var(--br-2)' }}>
+            <Theme appearance="light" asChild style={{ borderRadius: 'var(--radius-2)' }}>
               <Box position="absolute" bottom="0" right="0" m="2">
                 <IconButton tabIndex={-1} color="gray" variant="surface">
                   <BookmarkIcon width="16" height="16" />
@@ -269,7 +269,7 @@ export const ExampleEcommerce = () => {
                       height="4"
                       style={{
                         background: color.value,
-                        borderRadius: 'var(--br-1)',
+                        borderRadius: 'var(--radius-1)',
                         boxShadow: 'inset 0 0 0 1px rgba(90, 90, 90, 0.15)',
                       }}
                     />
@@ -319,7 +319,7 @@ export const ExampleEcommerce = () => {
                 <Flex grow="1" align="center" gap="2" height="6">
                   <img
                     src={item.url}
-                    style={{ borderRadius: 'var(--br-1)' }}
+                    style={{ borderRadius: 'var(--radius-1)' }}
                     width="32"
                     height="32"
                   />
@@ -380,10 +380,10 @@ export const ExampleEcommerce = () => {
               width="280"
               height="270"
               src="https://images.unsplash.com/photo-1577210897949-1f56f943bf82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=560&h=540&q=80&crop=bottom"
-              style={{ borderRadius: 'var(--br-1)' }}
+              style={{ borderRadius: 'var(--radius-1)' }}
             />
 
-            <Theme appearance="light" asChild style={{ borderRadius: 'var(--br-2)' }}>
+            <Theme appearance="light" asChild style={{ borderRadius: 'var(--radius-2)' }}>
               <Box position="absolute" bottom="0" right="0" m="2">
                 <IconButton tabIndex={-1} color="gray" variant="surface">
                   <BookmarkIcon width="16" height="16" />
@@ -466,7 +466,7 @@ export const ExampleEcommerce = () => {
               src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=560&h=424&q=80"
               width="280"
               height="212"
-              style={{ borderRadius: 'var(--br-1)' }}
+              style={{ borderRadius: 'var(--radius-1)' }}
             />
           </Flex>
 
@@ -527,7 +527,7 @@ export const ExampleEcommerce = () => {
               width="280"
               height="218"
               src="https://workos.imgix.net/images/bc04b345-f225-488d-8a46-1811096d0c3b.png?auto=format&fit=clip&q=90&w=840&h=654"
-              style={{ borderRadius: 'var(--br-1)' }}
+              style={{ borderRadius: 'var(--radius-1)' }}
             />
           </Flex>
 
@@ -585,7 +585,7 @@ export const ExampleEcommerce = () => {
                 <Flex mb="2">
                   <img
                     src={item.url}
-                    style={{ borderRadius: 'var(--br-1)' }}
+                    style={{ borderRadius: 'var(--radius-1)' }}
                     width="136"
                     height="136"
                   />
@@ -673,7 +673,7 @@ export const ExampleEcommerce = () => {
                   width="200"
                   height="200"
                   style={{
-                    borderRadius: 'var(--br-2)',
+                    borderRadius: 'var(--radius-2)',
                     objectFit: 'cover',
                     width: '100%',
                     height: 121,
@@ -687,7 +687,7 @@ export const ExampleEcommerce = () => {
                   width="200"
                   height="200"
                   style={{
-                    borderRadius: 'var(--br-2)',
+                    borderRadius: 'var(--radius-2)',
                     objectFit: 'cover',
                     width: '100%',
                     height: 121,
@@ -698,7 +698,7 @@ export const ExampleEcommerce = () => {
               <Flex
                 align="center"
                 justify="center"
-                style={{ border: '1px solid var(--gray-5)', borderRadius: 'var(--br-2)' }}
+                style={{ border: '1px solid var(--gray-5)', borderRadius: 'var(--radius-2)' }}
               >
                 <Grid columns="2" gap="2">
                   <IconButton tabIndex={-1} highContrast variant="soft" size="2">
@@ -842,7 +842,7 @@ export const ExampleEcommerce = () => {
                       height="4"
                       style={{
                         background: color.value,
-                        borderRadius: 'var(--br-1)',
+                        borderRadius: 'var(--radius-1)',
                         boxShadow: 'inset 0 0 0 1px rgba(90, 90, 90, 0.15)',
                       }}
                     />

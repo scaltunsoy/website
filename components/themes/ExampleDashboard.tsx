@@ -489,7 +489,7 @@ export const ExampleDashboard = () => (
           p="6"
           style={{
             backgroundColor: 'var(--gray-a3)',
-            borderRadius: 'var(--br-4)',
+            borderRadius: 'var(--radius-4)',
           }}
         >
           <Theme appearance="dark" asChild>
@@ -500,7 +500,7 @@ export const ExampleDashboard = () => (
                 height: 168,
                 background: 'linear-gradient(to top right, var(--accent-9), #E18BFF)',
                 boxShadow: '0 1px 20px -5px #7971E9AA',
-                borderRadius: 'var(--br-3)',
+                borderRadius: 'var(--radius-3)',
               }}
             >
               <Text mt="3" mx="3" size="2">

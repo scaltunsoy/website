@@ -43,7 +43,10 @@ export const ExampleMusicApp = () => (
           {songs.slice(0, 4).map((song) => (
             <Flex align="center" gap="3" key={song.name}>
               <Box asChild width="8" height="8">
-                <img src={song.cover} style={{ objectFit: 'cover', borderRadius: 'var(--br-2)' }} />
+                <img
+                  src={song.cover}
+                  style={{ objectFit: 'cover', borderRadius: 'var(--radius-2)' }}
+                />
               </Box>
               <Box grow="1" width="0">
                 <Text
@@ -262,7 +265,10 @@ export const ExampleMusicApp = () => (
           {songs.slice(5).map((song, i) => (
             <Flex align="center" gap="3" key={song.name}>
               <Box asChild width="8" height="8">
-                <img src={song.cover} style={{ objectFit: 'cover', borderRadius: 'var(--br-2)' }} />
+                <img
+                  src={song.cover}
+                  style={{ objectFit: 'cover', borderRadius: 'var(--radius-2)' }}
+                />
               </Box>
               <Box grow="1" width="0">
                 <Text
@@ -340,7 +346,7 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5" mb="7">
           {songs.slice(2, 7).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} />
+            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
           ))}
         </Grid>
 
@@ -358,7 +364,7 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5" mb="7">
           {songs.slice(0, 5).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} />
+            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
           ))}
         </Grid>
 
@@ -376,7 +382,7 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5">
           {songs.slice(8, 13).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} />
+            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
           ))}
         </Grid>
 
@@ -402,7 +408,7 @@ export const ExampleMusicApp = () => (
               position="absolute"
               style={{
                 overflow: 'hidden',
-                // borderRadius: 'var(--br-5)',
+                // borderRadius: 'var(--radius-5)',
                 borderRadius: '100px',
                 backgroundColor: 'var(--gray-a11)',
                 filter: 'saturate(0.5) brightness(1.1)',
@@ -473,7 +479,7 @@ export const ExampleMusicApp = () => (
                   src={songs[9].cover}
                   width="48"
                   height="48"
-                  style={{ borderRadius: 'var(--br-2)' }}
+                  style={{ borderRadius: 'var(--radius-2)' }}
                 />
                 <Box>
                   <Text size="1" as="div" weight="bold">
@@ -488,7 +494,7 @@ export const ExampleMusicApp = () => (
                     height="1"
                     style={{
                       backgroundColor: 'var(--gray-a5)',
-                      borderRadius: 'var(--br-1)',
+                      borderRadius: 'var(--radius-1)',
                       width: 320,
                     }}
                   >
@@ -496,7 +502,7 @@ export const ExampleMusicApp = () => (
                       position="absolute"
                       height="1"
                       width="9"
-                      style={{ borderRadius: 'var(--br-1)', backgroundColor: 'var(--gray-a9)' }}
+                      style={{ borderRadius: 'var(--radius-1)', backgroundColor: 'var(--gray-a9)' }}
                     />
                     <Box position="absolute" top="0" right="0" style={{ marginTop: -28 }}>
                       <Text size="1" color="gray">
@@ -713,7 +719,7 @@ export const ExampleMusicApp = () => (
                   width="200"
                   height="200"
                   src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--br-3)' }}
+                  style={{ borderRadius: 'var(--radius-3)' }}
                 />
               </Box>
               <Box asChild position="relative">
@@ -721,7 +727,7 @@ export const ExampleMusicApp = () => (
                   width="200"
                   height="200"
                   src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--br-3)' }}
+                  style={{ borderRadius: 'var(--radius-3)' }}
                 />
               </Box>
             </Flex>
