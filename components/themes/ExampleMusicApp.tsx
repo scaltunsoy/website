@@ -212,12 +212,7 @@ export const ExampleMusicApp = () => (
                 Equalizer
               </Heading>
 
-              <Switch
-                defaultChecked
-                radius="full"
-                size="1"
-                style={{ marginTop: 2, marginBottom: -2 }}
-              />
+              <Switch defaultChecked radius="full" size="1" />
             </Flex>
 
             <Flex mt="1" gap="4">
@@ -987,9 +982,15 @@ export const ExampleMusicApp = () => (
               <Box
                 asChild
                 position="absolute"
-                mt="3"
-                // style={{ filter: 'blur(32px) brightness(1.5) saturate(2)', opacity: 0.5 }}
-              />
+                style={{ filter: 'blur(32px) brightness(1.5) saturate(2)', opacity: 0.5 }}
+              >
+                <img
+                  width="200"
+                  height="200"
+                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
+                  style={{ borderRadius: 'var(--radius-3)' }}
+                />
+              </Box>
               <Box asChild position="relative">
                 <img
                   width="200"
@@ -1210,11 +1211,11 @@ const AlbumCard = ({ album, artist, cover }: { album: string; artist: string; co
   <Hover.Root>
     <Box p="3" m="-3">
       <Box position="relative" mb="2">
-        {/* <Box position="absolute" inset="0" mt="4" style={{ filter: 'blur(24px)', opacity: 0.2 }}>
+        <Box position="absolute" inset="0" mt="4" style={{ filter: 'blur(24px)', opacity: 0.2 }}>
           <AspectRatio ratio={1}>
             <img src={cover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </AspectRatio>
-        </Box> */}
+        </Box>
 
         <Card>
           <Box style={{ margin: 'calc(var(--card-padding) * -1)', cursor: 'pointer' }}>
