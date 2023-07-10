@@ -6,7 +6,7 @@ import { ExampleMusicApp } from '@components/themes/ExampleMusicApp';
 export default function ExamplePage() {
   return (
     <Box asChild p="9">
-      <Theme grayScale="slate" accentScale="green" appearance="dark" radius="large">
+      <Theme grayScale="slate" accentScale="green" appearance="dark" radius="medium">
         <ExampleMusicApp />
       </Theme>
     </Box>
