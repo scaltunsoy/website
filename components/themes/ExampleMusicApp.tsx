@@ -15,20 +15,23 @@ import {
   Link,
   TextField,
   Avatar,
+  Checkbox,
+  HoverCard,
+  Blockquote,
 } from '@radix-ui/themes';
 import { Label } from '@radix-ui/react-label';
 import { Card } from './Card';
 import { Hover } from './Hover';
-import { ChevronLeftIcon, ChevronRightIcon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { allPeople } from './people';
 
 export const ExampleMusicApp = () => (
   <Flex align="center" gap="6">
-    <Flex shrink="0" gap="6" direction="column" style={{ width: 416 }}>
+    <Flex shrink="0" gap="6" direction="column" style={{ width: 416, marginBottom: 47 }}>
       <Card size="3">
-        <Box height="7">
+        <Box height="4" mb="4">
           <Flex align="center" justify="between">
-            <Heading as="h3" size="5" trim="both">
+            <Heading as="h3" size="4" trim="both">
               Queue
             </Heading>
 
@@ -44,7 +47,7 @@ export const ExampleMusicApp = () => (
         </Box>
 
         <Flex direction="column" gap="4">
-          {songs.slice(0, 4).map((song) => (
+          {songs.slice(0, 5).map((song) => (
             <Flex align="center" gap="3" key={song.name}>
               <Box asChild width="8" height="8">
                 <img
@@ -80,19 +83,21 @@ export const ExampleMusicApp = () => (
       </Card>
 
       <Card size="3">
-        <Box height="7">
-          <Flex justify="between" align="center">
-            <Heading as="h3" size="5" trim="both">
+        <Box height="4" mb="6">
+          <Flex align="center" justify="between">
+            <Heading as="h3" size="4" trim="both">
               Sound
             </Heading>
 
-            <Text size="2" color="gray">
-              Yamaha THR
-            </Text>
+            <Flex gap="4">
+              <Text size="2" color="gray">
+                Yamaha THR
+              </Text>
+            </Flex>
           </Flex>
         </Box>
 
-        <Flex gap="2" align="center" mt="2" mb="5">
+        <Flex gap="2" align="center" height="4" mt="2" mb="5">
           <VolumeNoneIcon color="var(--gray-a9)" />
           <Box grow="1">
             <Slider radius="full" defaultValue={[80]} />
@@ -100,7 +105,7 @@ export const ExampleMusicApp = () => (
           <VolumeMaxIcon color="var(--gray-a9)" />
         </Flex>
 
-        <Grid columns="4">
+        <Grid columns="4" pt="2" pb="1">
           <Flex direction="column" gap="2" align="center" asChild>
             <Label>
               <IconButton radius="full" variant="solid">
@@ -200,23 +205,30 @@ export const ExampleMusicApp = () => (
       </Card>
 
       <Card size="3">
-        <Box height="7">
-          <Flex justify="between" align="center">
+        <Box height="4" mb="6">
+          <Flex align="center" justify="between">
             <Flex align="center" gap="3">
-              <Heading as="h3" size="5" trim="both">
+              <Heading as="h3" size="4" trim="both">
                 Equalizer
               </Heading>
 
-              <Switch defaultChecked radius="full" size="1" />
+              <Switch
+                defaultChecked
+                radius="full"
+                size="1"
+                style={{ marginTop: 2, marginBottom: -2 }}
+              />
             </Flex>
 
-            <Button m="-3" size="2" variant="ghost">
-              Reset
-            </Button>
+            <Flex mt="1" gap="4">
+              <Button m="-3" size="2" variant="ghost">
+                Reset
+              </Button>
+            </Flex>
           </Flex>
         </Box>
 
-        <Box position="relative" mt="2">
+        <Box position="relative" my="-1">
           <Flex direction="column" gap="4" py="4" position="absolute" left="0" right="0">
             <Box style={{ borderTop: '1px dotted var(--gray-a5)', marginTop: -1 }} />
             <Box style={{ borderTop: '1px dotted var(--gray-a5)', marginTop: -1 }} />
@@ -259,13 +271,13 @@ export const ExampleMusicApp = () => (
       </Card>
 
       <Card size="3">
-        <Box height="7">
+        <Box height="4" mb="4">
           <Flex align="center" justify="between">
-            <Heading as="h3" size="5" trim="both">
+            <Heading as="h3" size="4" trim="both">
               History
             </Heading>
 
-            <Flex gap="4">
+            <Flex mt="1" gap="4">
               <Button m="-3" size="2" variant="ghost">
                 Clear
               </Button>
@@ -274,7 +286,7 @@ export const ExampleMusicApp = () => (
         </Box>
 
         <Flex direction="column" gap="4">
-          {songs.slice(5).map((song, i) => (
+          {songs.slice(3).map((song, i) => (
             <Flex align="center" gap="3" key={song.name}>
               <Box asChild width="8" height="8">
                 <img
@@ -310,8 +322,8 @@ export const ExampleMusicApp = () => (
       </Card>
     </Flex>
 
-    <Flex shrink="0" gap="6" direction="column" style={{ width: 1312, paddingTop: 100 }}>
-      <Card size="4" style={{ height: 900 }}>
+    <Flex shrink="0" gap="6" direction="column" style={{ width: 1312, marginBottom: -17 }}>
+      <Card size="4" style={{ height: 896 }}>
         <Flex
           position="absolute"
           align="center"
@@ -611,28 +623,13 @@ export const ExampleMusicApp = () => (
       <Flex gap="6" shrink="0">
         <Flex gap="6" shrink="0" direction="column" style={{ width: 416 }}>
           <Card size="3">
-            <Box height="7">
-              <Heading as="h3" size="5" trim="both">
+            <Box height="4" mb="4">
+              <Heading as="h3" size="4" trim="both">
                 Settings
               </Heading>
             </Box>
 
             <Flex direction="column" gap="5">
-              <Label>
-                <Flex justify="between" gap="5">
-                  <Box>
-                    <Text as="div" size="2" weight="medium" mb="1">
-                      Offline mode
-                    </Text>
-                    <Text as="div" color="gray" size="1">
-                      Only play what you’ve downloaded
-                    </Text>
-                  </Box>
-
-                  <Switch radius="full" defaultChecked mt="2" />
-                </Flex>
-              </Label>
-
               <Label>
                 <Flex justify="between" gap="5">
                   <Box>
@@ -683,21 +680,6 @@ export const ExampleMusicApp = () => (
                 <Flex justify="between" gap="5">
                   <Box>
                     <Text as="div" size="2" weight="medium" mb="1">
-                      Explicit content
-                    </Text>
-                    <Text as="div" color="gray" size="1">
-                      Show songs with profanities
-                    </Text>
-                  </Box>
-
-                  <Switch radius="full" defaultChecked mt="2" />
-                </Flex>
-              </Label>
-
-              <Label>
-                <Flex justify="between" gap="5">
-                  <Box>
-                    <Text as="div" size="2" weight="medium" mb="1">
                       Normalize volume
                     </Text>
                     <Text as="div" color="gray" size="1">
@@ -738,7 +720,7 @@ export const ExampleMusicApp = () => (
                 </Flex>
               </Box>
 
-              <Box>
+              <Box mb="1">
                 <Flex justify="between" gap="5">
                   <Box>
                     <Text as="div" size="2" weight="medium">
@@ -768,91 +750,175 @@ export const ExampleMusicApp = () => (
               </Box>
             </Flex>
           </Card>
-        </Flex>
 
-        <Box shrink="0" style={{ width: 416 }}>
           <Card size="3">
-            <Flex m="4" align="center" justify="center" position="relative">
-              <Box
-                asChild
-                position="absolute"
-                mt="3"
-                style={{ filter: 'blur(32px) brightness(1.5) saturate(2)', opacity: 0.5 }}
-              >
-                <img
-                  width="200"
-                  height="200"
-                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--radius-3)' }}
-                />
-              </Box>
-              <Box asChild position="relative">
-                <img
-                  width="200"
-                  height="200"
-                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--radius-3)' }}
-                />
-              </Box>
-            </Flex>
-
-            <Box mt="6">
-              <Flex mb="4" align="center" justify="center">
-                {[1, 2, 3, 4].map((i) => (
-                  <svg
-                    key={i}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 30 30"
-                    width="20"
-                    height="20"
-                    fill="currentcolor"
-                    color="var(--accent-9)"
-                  >
-                    <path d="M15.765,2.434l2.875,8.512l8.983,0.104c0.773,0.009,1.093,0.994,0.473,1.455l-7.207,5.364l2.677,8.576 c0.23,0.738-0.607,1.346-1.238,0.899L15,22.147l-7.329,5.196c-0.63,0.447-1.468-0.162-1.238-0.899l2.677-8.576l-7.207-5.364 c-0.62-0.461-0.3-1.446,0.473-1.455l8.983-0.104l2.875-8.512C14.482,1.701,15.518,1.701,15.765,2.434z" />
-                  </svg>
-                ))}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 60 60"
-                  width="20"
-                  height="20"
-                  fill="currentcolor"
-                  color="var(--accent-9)"
-                >
-                  <path d="M29.887 3.926A2 2 0 0 0 28.078 5.3l-5.41 16.535-17.395.035a2 2 0 0 0-1.175 3.613l14.054 10.254-5.343 16.559a2 2 0 0 0 3.074 2.234l14.094-10.199 14.097 10.2a2 2 0 0 0 3.075-2.235l-5.344-16.559 14.054-10.254a2 2 0 0 0-1.175-3.613l-17.399-.035L31.88 5.301a2 2 0 0 0-1.992-1.375Zm.09 8.433 3.957 12.098a2 2 0 0 0 1.898 1.379l12.727.023-10.282 7.5a2 2 0 0 0-.722 2.23l3.91 12.118-10.317-7.465a2 2 0 0 0-2.343 0l-10.309 7.461 3.906-12.113a2 2 0 0 0-.722-2.23l-10.281-7.5 12.726-.024a2.001 2.001 0 0 0 1.895-1.379l3.957-12.098Z" />
-                  <path d="M29.887 3.926A2 2 0 0 0 28.078 5.3l-5.41 16.535-17.395.035a2 2 0 0 0-1.175 3.613l14.054 10.254-5.343 16.559a2 2 0 0 0 3.074 2.234l14.094-10.199 14.097 10.2a2 2 0 0 0 3.075-2.235l-5.344-16.559 14.054-10.254a2 2 0 0 0-1.175-3.613l-17.399-.035L31.88 5.301a2 2 0 0 0-1.992-1.375Zm.09 8.433 3.957 12.098a2 2 0 0 0 1.898 1.379l12.727.023-10.282 7.5a2 2 0 0 0-.722 2.23l3.91 12.118-10.317-7.465a2 2 0 0 0-2.343 0l-10.309 7.461 3.906-12.113a2 2 0 0 0-.722-2.23l-10.281-7.5 12.726-.024a2.001 2.001 0 0 0 1.895-1.379l3.957-12.098Z" />
-                  <path d="M28.805 40.242a2 2 0 0 1 1.172-.379V12.359L26.02 24.457a2 2 0 0 1-1.895 1.379l-12.726.023 10.28 7.5a2 2 0 0 1 .723 2.23l-3.906 12.114 10.309-7.46Z" />
-                </svg>
-              </Flex>
-
-              <Heading align="center" as="h3" size="4" mb="2">
-                King Krule – The OOZ
-              </Heading>
-
-              <Text align="center" as="p" color="gray" size="2" mb="4">
-                A dark and introspective album that showcases King Krule’s distinctive blend of
-                genres, and delivering hauntingly raw and poetic lyrics.
-              </Text>
-
-              <Flex justify="center" gap="3">
-                <Button>Listen Now</Button>
-                <IconButton variant="soft">
-                  <HeartIcon />
-                </IconButton>
-              </Flex>
-            </Box>
-          </Card>
-        </Box>
-
-        <Box shrink="0" style={{ width: 416 }}>
-          <Card size="3">
-            <Box height="7" mb="2">
+            <Box height="4" mb="5">
               <Flex align="center" justify="between">
-                <Heading as="h3" size="5" trim="both">
-                  Create a playlist
+                <Heading as="h3" size="4" trim="both">
+                  Membership
                 </Heading>
 
                 <Flex gap="4">
+                  <Button m="-3" size="2" variant="ghost">
+                    Done
+                  </Button>
+                </Flex>
+              </Flex>
+            </Box>
+
+            <Flex direction="column" gap="4">
+              <Flex align="center" justify="between">
+                <Flex direction="column" gap="1">
+                  <Text size="2" weight="medium">
+                    Individual
+                  </Text>
+                  <Text size="1" color="gray">
+                    Sign up with 1 account
+                  </Text>
+                </Flex>
+                <Button variant="soft" style={{ width: 64 }}>
+                  $4.99
+                </Button>
+              </Flex>
+
+              <Flex align="center" justify="between">
+                <Flex direction="column" gap="1">
+                  <Text size="2" weight="medium">
+                    Duo
+                  </Text>
+                  <Text size="1" color="gray">
+                    Sign up 2 accounts
+                  </Text>
+                </Flex>
+                <Button style={{ width: 64 }}>$6.99</Button>
+              </Flex>
+
+              <Flex align="center" justify="between">
+                <Flex direction="column" gap="1">
+                  <Text size="2" weight="medium">
+                    Family
+                  </Text>
+                  <Text size="1" color="gray">
+                    Sign up to 6 accounts
+                  </Text>
+                </Flex>
+                <Button variant="soft" style={{ width: 64 }}>
+                  $12.99
+                </Button>
+              </Flex>
+            </Flex>
+
+            <Box my="5">
+              <Separator size="4" style={{ marginTop: -1 }} />
+            </Box>
+
+            <Box height="8">
+              <Text size="2" as="p" my="3">
+                Your next payment is $6.99 on July 18, 2023
+              </Text>
+
+              <Text size="2" as="p">
+                <Link>Cancel subscription</Link>
+              </Text>
+            </Box>
+          </Card>
+        </Flex>
+
+        <Flex gap="6" shrink="0" direction="column" style={{ width: 416 }}>
+          <Card size="3">
+            <Box height="4" mb="5">
+              <Flex align="center" justify="between">
+                <Heading as="h3" size="4" trim="both">
+                  Your profile
+                </Heading>
+
+                <Flex mt="1" gap="4">
+                  <Button m="-3" size="2" variant="ghost">
+                    Cancel
+                  </Button>
+                  <Button m="-3" size="2" variant="ghost">
+                    Save
+                  </Button>
+                </Flex>
+              </Flex>
+            </Box>
+
+            <Flex direction="column" gap="4">
+              <Flex asChild direction="column" gap="2">
+                <Label>
+                  <Text size="2" weight="medium">
+                    Name
+                  </Text>
+                  <TextField defaultValue="Vlad Moroz" />
+                </Label>
+              </Flex>
+
+              <Flex asChild direction="column" gap="2">
+                <Label>
+                  <Text size="2" weight="medium">
+                    Username
+                  </Text>
+                  <TextField defaultValue="@vladmoroz" />
+                </Label>
+              </Flex>
+
+              <Flex asChild direction="column" gap="2">
+                <Label>
+                  <Text size="2" weight="medium">
+                    Email
+                  </Text>
+                  <TextField defaultValue="hi@vladmoroz.com" />
+                </Label>
+              </Flex>
+
+              <Flex direction="column" gap="2">
+                <Text size="2" weight="medium">
+                  Privacy
+                </Text>
+                <Flex direction="column" gap="2">
+                  <Flex asChild gap="2">
+                    <Label>
+                      <Checkbox defaultChecked />
+                      <Text size="2">Display my listening history</Text>
+                    </Label>
+                  </Flex>
+
+                  <Flex asChild gap="2">
+                    <Label>
+                      <Checkbox />
+                      <Text size="2">Everyone can follow my activity</Text>
+                    </Label>
+                  </Flex>
+
+                  <Flex asChild gap="2">
+                    <Label>
+                      <Checkbox defaultChecked />
+                      <Text size="2">Show my playlists in search</Text>
+                    </Label>
+                  </Flex>
+                </Flex>
+              </Flex>
+
+              <Flex direction="column" gap="2">
+                <Text size="2" weight="medium">
+                  Danger zone
+                </Text>
+                <Flex direction="column" gap="2">
+                  <Link size="2">Reset recommendations</Link>
+                  <Link size="2">Delete profile</Link>
+                </Flex>
+              </Flex>
+            </Flex>
+          </Card>
+
+          <Card size="3">
+            <Box height="4" mb="5">
+              <Flex align="center" justify="between">
+                <Heading as="h3" size="4" trim="both">
+                  Create a playlist
+                </Heading>
+
+                <Flex mt="1" gap="4">
                   <Button m="-3" size="2" variant="ghost">
                     Start over
                   </Button>
@@ -913,7 +979,228 @@ export const ExampleMusicApp = () => (
               </Flex>
             </Box>
           </Card>
-        </Box>
+        </Flex>
+
+        <Flex gap="6" shrink="0" direction="column" style={{ width: 416 }}>
+          <Card size="3">
+            <Flex m="4" align="center" justify="center" position="relative">
+              <Box
+                asChild
+                position="absolute"
+                mt="3"
+                // style={{ filter: 'blur(32px) brightness(1.5) saturate(2)', opacity: 0.5 }}
+              />
+              <Box asChild position="relative">
+                <img
+                  width="200"
+                  height="200"
+                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
+                  style={{ borderRadius: 'var(--radius-3)' }}
+                />
+              </Box>
+            </Flex>
+
+            <Box mt="5">
+              <Flex mb="4" align="center" justify="center">
+                {[1, 2, 3, 4].map((i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30 30"
+                    width="20"
+                    height="20"
+                    fill="currentcolor"
+                    color="var(--accent-9)"
+                  >
+                    <path d="M15.765,2.434l2.875,8.512l8.983,0.104c0.773,0.009,1.093,0.994,0.473,1.455l-7.207,5.364l2.677,8.576 c0.23,0.738-0.607,1.346-1.238,0.899L15,22.147l-7.329,5.196c-0.63,0.447-1.468-0.162-1.238-0.899l2.677-8.576l-7.207-5.364 c-0.62-0.461-0.3-1.446,0.473-1.455l8.983-0.104l2.875-8.512C14.482,1.701,15.518,1.701,15.765,2.434z" />
+                  </svg>
+                ))}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 60 60"
+                  width="20"
+                  height="20"
+                  fill="currentcolor"
+                  color="var(--accent-9)"
+                >
+                  <path d="M29.887 3.926A2 2 0 0 0 28.078 5.3l-5.41 16.535-17.395.035a2 2 0 0 0-1.175 3.613l14.054 10.254-5.343 16.559a2 2 0 0 0 3.074 2.234l14.094-10.199 14.097 10.2a2 2 0 0 0 3.075-2.235l-5.344-16.559 14.054-10.254a2 2 0 0 0-1.175-3.613l-17.399-.035L31.88 5.301a2 2 0 0 0-1.992-1.375Zm.09 8.433 3.957 12.098a2 2 0 0 0 1.898 1.379l12.727.023-10.282 7.5a2 2 0 0 0-.722 2.23l3.91 12.118-10.317-7.465a2 2 0 0 0-2.343 0l-10.309 7.461 3.906-12.113a2 2 0 0 0-.722-2.23l-10.281-7.5 12.726-.024a2.001 2.001 0 0 0 1.895-1.379l3.957-12.098Z" />
+                  <path d="M29.887 3.926A2 2 0 0 0 28.078 5.3l-5.41 16.535-17.395.035a2 2 0 0 0-1.175 3.613l14.054 10.254-5.343 16.559a2 2 0 0 0 3.074 2.234l14.094-10.199 14.097 10.2a2 2 0 0 0 3.075-2.235l-5.344-16.559 14.054-10.254a2 2 0 0 0-1.175-3.613l-17.399-.035L31.88 5.301a2 2 0 0 0-1.992-1.375Zm.09 8.433 3.957 12.098a2 2 0 0 0 1.898 1.379l12.727.023-10.282 7.5a2 2 0 0 0-.722 2.23l3.91 12.118-10.317-7.465a2 2 0 0 0-2.343 0l-10.309 7.461 3.906-12.113a2 2 0 0 0-.722-2.23l-10.281-7.5 12.726-.024a2.001 2.001 0 0 0 1.895-1.379l3.957-12.098Z" />
+                  <path d="M28.805 40.242a2 2 0 0 1 1.172-.379V12.359L26.02 24.457a2 2 0 0 1-1.895 1.379l-12.726.023 10.28 7.5a2 2 0 0 1 .723 2.23l-3.906 12.114 10.309-7.46Z" />
+                </svg>
+              </Flex>
+
+              <Heading align="center" as="h3" size="4" mb="2">
+                King Krule – The OOZ
+              </Heading>
+
+              <Text align="center" as="p" color="gray" size="2" mb="4">
+                A dark and introspective album that showcases King Krule’s distinctive blend of
+                genres, and delivering hauntingly raw and poetic lyrics.
+              </Text>
+
+              <Flex justify="center" gap="3">
+                <Button>Listen Now</Button>
+                <IconButton variant="soft">
+                  <HeartIcon />
+                </IconButton>
+              </Flex>
+            </Box>
+          </Card>
+
+          <Card size="3">
+            <Box
+              position="relative"
+              style={{
+                height: 336,
+                marginBottom: 'calc(-1 * var(--card-padding))',
+                overflow: 'hidden',
+              }}
+            >
+              <Box height="4" mb="3">
+                <Heading as="h3" size="4" trim="both">
+                  Lyrics
+                </Heading>
+              </Box>
+
+              <Text as="div" color="gray" size="3" mb="5">
+                King Krule – Biscuit Town
+              </Text>
+
+              <Text as="div" size="2">
+                <Flex direction="column" align="start" gap="4">
+                  <Flex direction="column" align="start" gap="1">
+                    <HoverCard.Root>
+                      <HoverCard.Trigger>
+                        <Link>I seem to sink lower, gazing in the rays of the solar</Link>
+                      </HoverCard.Trigger>
+                      <HoverCard.Content side="top" style={{ maxWidth: 320 }}>
+                        <Flex gap="2" direction="column">
+                          <Text size="2" as="p">
+                            Archy Marshall begins the opening track with an allusion to a common
+                            theme that appears throughout his body of work – introspection, and
+                            unhappiness with himself and the world around him. A “sinking” feeling
+                            is often linked to sadness, depression or anxiety.
+                          </Text>
+
+                          <Text size="2" as="p">
+                            After releasing his debut studio album 6 Feet Beneath the Moon as King
+                            Krule, Archy said in an interview with HYPEBEAST:
+                          </Text>
+
+                          <Blockquote size="2" color="gray">
+                            I was unhappy with myself and what I was creating, and when that happens
+                            you feel like you’re useless. Musically I felt so useless.
+                          </Blockquote>
+
+                          <Text size="2" as="p">
+                            This lyric can furthermore be connected to his debut album’s title.
+                          </Text>
+                        </Flex>
+                      </HoverCard.Content>
+                    </HoverCard.Root>
+                    <Text>In fact, we made a pact, but now I think it’s over</Text>
+
+                    <HoverCard.Root>
+                      <HoverCard.Trigger>
+                        <Link>Red on white but he sipped on KA soda</Link>
+                      </HoverCard.Trigger>
+                      <HoverCard.Content side="top" style={{ maxWidth: 320 }}>
+                        <Flex gap="2" direction="column">
+                          <Text size="2" as="p">
+                            Archy is an Englishman, the flag of England is white with a red cross.
+                            But he’s drinking KA soda (or at least thinks he is), which is a soda
+                            from the Caribbean
+                          </Text>
+                        </Flex>
+                      </HoverCard.Content>
+                    </HoverCard.Root>
+                    <Text>
+                      Damn, that's Coca-Cola,{' '}
+                      <HoverCard.Root>
+                        <HoverCard.Trigger>
+                          <Link>as TV sports the Olympic ebola</Link>
+                        </HoverCard.Trigger>
+                        <HoverCard.Content side="top" style={{ maxWidth: 320 }}>
+                          <Flex gap="2" direction="column">
+                            <Text size="2" as="p">
+                              This could refer to the banning of 3 West African athletes from the
+                              2014 Youth Olympic Games due to an ebola outbreak in the region. The
+                              line serves to set the scene by saying he is watching television, or
+                              at least its on, and news of the athletes' banning would be what’s
+                              being broadcast.
+                            </Text>
+                          </Flex>
+                        </HoverCard.Content>
+                      </HoverCard.Root>
+                    </Text>
+                    <Text>I think we might be bipolar, I think she thinks I’m bipolar</Text>
+
+                    <HoverCard.Root>
+                      <HoverCard.Trigger>
+                        <Link href="#">He left the crime scene without the Motorola</Link>
+                      </HoverCard.Trigger>
+                      <HoverCard.Content side="top" style={{ maxWidth: 320 }}>
+                        <Flex gap="2" direction="column">
+                          <Text size="2" as="p">
+                            One of the most iconic mobile phones produced was the Motorola Razr.
+                          </Text>
+
+                          <Text size="2" as="p">
+                            The name ‘Razor’ is meant to reflect how thin the phone was. In this
+                            context, the “Motorola” is a metaphor for the weapon left at the crime
+                            scene. It could also be a direct reference to the phone left at the
+                            scene.
+                          </Text>
+                        </Flex>
+                      </HoverCard.Content>
+                    </HoverCard.Root>
+                    <Text>Still had dreams of being Gianfranco Zola</Text>
+                    <Text>For at least for now, it’s all over</Text>
+                    <Text>Yeah, at least for now, it’s all over</Text>
+                  </Flex>
+
+                  <Flex direction="column" align="start" gap="1">
+                    <Text>I seem to sink lower</Text>
+                    <HoverCard.Root>
+                      <HoverCard.Trigger>
+                        <Link>In biscuit town, in biscuit town</Link>
+                      </HoverCard.Trigger>
+                      <HoverCard.Content side="top" style={{ maxWidth: 320 }}>
+                        <Flex gap="2" direction="column">
+                          <Text size="2" as="p">
+                            Biscuit Town = Bermondsey, London, which is the former home of Peek
+                            Freans, a now global biscuit company. This is further confirmed by the
+                            album’s two interludes being named “Bermondsey Bosom (Left)” and
+                            “Bermondsey Bosom (Right)”.
+                          </Text>
+                        </Flex>
+                      </HoverCard.Content>
+                    </HoverCard.Root>
+                  </Flex>
+
+                  <Flex direction="column" align="start" gap="1">
+                    <Text>
+                      You're shallow waters, I’m the deep seabed And I’m the reason you flow
+                    </Text>
+                    I got more moons wrapped around my head and Jupiter knows Whilst you orbit with
+                    some stupider hoes Only a slacker would know tryna get up and group home Tryna
+                    eat from the same bowl, in my troopers abode
+                  </Flex>
+                </Flex>
+              </Text>
+
+              <Box
+                position="absolute"
+                inset="0"
+                style={{
+                  opacity: 0.6,
+                  pointerEvents: 'none',
+                  background: 'linear-gradient(to bottom, transparent, var(--color-panel))',
+                }}
+              />
+            </Box>
+          </Card>
+        </Flex>
       </Flex>
     </Flex>
   </Flex>
@@ -923,11 +1210,11 @@ const AlbumCard = ({ album, artist, cover }: { album: string; artist: string; co
   <Hover.Root>
     <Box p="3" m="-3">
       <Box position="relative" mb="2">
-        <Box position="absolute" inset="0" mt="4" style={{ filter: 'blur(24px)', opacity: 0.2 }}>
+        {/* <Box position="absolute" inset="0" mt="4" style={{ filter: 'blur(24px)', opacity: 0.2 }}>
           <AspectRatio ratio={1}>
             <img src={cover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </AspectRatio>
-        </Box>
+        </Box> */}
 
         <Card>
           <Box style={{ margin: 'calc(var(--card-padding) * -1)', cursor: 'pointer' }}>
