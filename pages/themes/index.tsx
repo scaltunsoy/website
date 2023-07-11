@@ -24,8 +24,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build faster</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
@@ -50,8 +50,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build better</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
@@ -86,8 +86,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build nicer</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
@@ -113,8 +113,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build cooler</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
@@ -140,8 +140,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build hotter</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
@@ -167,8 +167,8 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build more</ThemesHero.Title>
                 <ThemesHero.Text>
-                  Configurable component library from the Radix team. Move quickly with a suite of
-                  beautiful, high-quality components and smooth DX.
+                  Beautiful, open source component library from the Radix team. Made so that you can
+                  focus on shipping your app. Just import and get going.
                 </ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
