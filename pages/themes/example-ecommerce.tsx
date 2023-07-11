@@ -1,7 +1,7 @@
 import { Box, Theme } from '@radix-ui/themes';
+import { ExampleEcommerce } from '@components/themes/ExampleEcommerce';
 import '@radix-ui/themes/dist/index.css';
 import * as React from 'react';
-import { ExampleEcommerce } from '@components/themes/ExampleEcommerce';
 
 export default function ExamplePage() {
   return (

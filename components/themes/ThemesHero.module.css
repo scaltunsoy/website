@@ -3,12 +3,129 @@
   flex-direction: column;
   min-height: 100vh;
 
+  font-family: 'Untitled Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', 'Open Sans', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
   /* Prevent elements with `position: absolute` from adding scrollbars */
   overflow: hidden;
 
   /* Scaling multiplier for the demo area */
   --themes-hero-showcase-scale: calc(10 / 16);
   --themes-hero-showcase-base-width: 1760px;
+}
+
+.ThemesHeroRoot.color-1 {
+  --themes-hero-text-color: var(--indigo-12);
+  --themes-hero-contrast-color: var(--indigo-1);
+
+  --themes-hero-tagline-title-color-1: #87a3ff;
+  --themes-hero-tagline-title-color-2: #b8adee;
+  --themes-hero-tagline-title-color-3: #aba9fc;
+  --themes-hero-tagline-title-color-4: #e787ff;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 0.55 0.64 1 / 1);
+  --themes-hero-tagline-title-color-2: #b8adee;
+  --themes-hero-tagline-title-color-3: color(display-p3 0.67 0.66 1 / 1);
+  --themes-hero-tagline-title-color-4: color(display-p3 0.9 0.55 1 / 1);
+}
+
+.ThemesHeroRoot.color-2 {
+  --themes-hero-text-color: var(--indigo-12);
+  --themes-hero-contrast-color: var(--indigo-1);
+
+  --themes-hero-tagline-title-color-1: #acbcff;
+  --themes-hero-tagline-title-color-2: #8299f4;
+  --themes-hero-tagline-title-color-3: #d971ab;
+  --themes-hero-tagline-title-color-4: var(--red-11);
+
+  --themes-hero-tagline-title-color-1: color(display-p3 0.69 0.74 1 / 1);
+  --themes-hero-tagline-title-color-2: color(display-p3 0.53 0.6 1 / 1);
+  --themes-hero-tagline-title-color-3: #d971ab;
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.43 0.43 / 1);
+}
+
+.ThemesHeroRoot.color-3 {
+  --themes-hero-text-color: var(--sage-12);
+  --themes-hero-contrast-color: var(--sage-1);
+
+  /*
+  --themes-hero-tagline-title-color-1: #e6b38c;
+  --themes-hero-tagline-title-color-2: #f3ce82;
+  --themes-hero-tagline-title-color-3: #e6b17e;
+  --themes-hero-tagline-title-color-4: #ff7f7d;
+
+  --themes-hero-tagline-title-color-1: #e6b38c;
+  --themes-hero-tagline-title-color-2: #f3ce82;
+  --themes-hero-tagline-title-color-3: #e6b17e;
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.53 0.51);
+  */
+
+  --themes-hero-tagline-title-color-1: #00ff71;
+  --themes-hero-tagline-title-color-2: #00e99d;
+  --themes-hero-tagline-title-color-3: #74f0d5;
+  --themes-hero-tagline-title-color-4: #00ffcc;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 0 1 0.51);
+  --themes-hero-tagline-title-color-2: color(display-p3 0.26 0.9 0.64);
+  --themes-hero-tagline-title-color-3: color(display-p3 0.58 0.93 0.84);
+  --themes-hero-tagline-title-color-4: color(display-p3 0.12 1 0.81);
+}
+
+.ThemesHeroRoot.color-4 {
+  --themes-hero-text-color: var(--sage-12);
+  --themes-hero-contrast-color: var(--sage-1);
+
+  /*
+  --themes-hero-tagline-title-color-1: #e8b961;
+  --themes-hero-tagline-title-color-2: #ffd83b;
+  --themes-hero-tagline-title-color-3: #fcb24d;
+  --themes-hero-tagline-title-color-4: #ff4141;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 1 0.8 0.4);
+  --themes-hero-tagline-title-color-2: color(display-p3 1 0.87 0.36);
+  --themes-hero-tagline-title-color-3: color(display-p3 1 0.74 0.37);
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.19 0.15);
+  */
+
+  --themes-hero-tagline-title-color-1: #00ff71;
+  --themes-hero-tagline-title-color-2: #00e99d;
+  --themes-hero-tagline-title-color-3: #74f0e6;
+  --themes-hero-tagline-title-color-4: #00ecff;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 0 1 0.51);
+  --themes-hero-tagline-title-color-2: color(display-p3 0.26 0.9 0.64);
+  --themes-hero-tagline-title-color-3: color(display-p3 0.58 0.93 0.9);
+  --themes-hero-tagline-title-color-4: color(display-p3 0.12 0.91 1);
+}
+
+.ThemesHeroRoot.color-5 {
+  --themes-hero-text-color: var(--mauve-12);
+  --themes-hero-contrast-color: var(--mauve-1);
+
+  --themes-hero-tagline-title-color-1: #ff0000;
+  --themes-hero-tagline-title-color-2: #ff8283;
+  --themes-hero-tagline-title-color-3: #ff9583;
+  --themes-hero-tagline-title-color-4: #ff63b7;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 1 0.08 0);
+  --themes-hero-tagline-title-color-2: color(display-p3 1 0.54 0.53);
+  --themes-hero-tagline-title-color-3: color(display-p3 1 0.61 0.53);
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.44 0.71);
+}
+
+.ThemesHeroRoot.color-6 {
+  --themes-hero-text-color: var(--pink-12);
+  --themes-hero-contrast-color: var(--pink-1);
+
+  --themes-hero-tagline-title-color-1: #ff4b44;
+  --themes-hero-tagline-title-color-2: #ff82a6;
+  --themes-hero-tagline-title-color-3: #ff9681;
+  --themes-hero-tagline-title-color-4: #ff965d;
+
+  --themes-hero-tagline-title-color-1: color(display-p3 1 0.36 0.31);
+  --themes-hero-tagline-title-color-2: color(display-p3 1 0.54 0.65);
+  --themes-hero-tagline-title-color-3: color(display-p3 1 0.61 0.53);
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.61 0.41);
 }
 
 @media (min-width: 500px) {
@@ -88,13 +205,12 @@
 }
 
 .ThemesHeroTagline {
-  color: var(--indigo-12);
+  color: var(--themes-hero-text-color);
   box-sizing: border-box;
   margin-top: 80px;
 }
 
 .ThemesHeroTaglineTitle {
-  font-family: 'Untitled Sans', sans-serif;
   font-size: 280em;
   font-weight: 500;
   letter-spacing: -0.09em;
@@ -102,44 +218,50 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: -0.075em;
-  background-image: linear-gradient(
-    180deg,
-    #6599ff 0%,
-    #b8adee 63.54%,
-    #aba9fc 83.85%,
-    #e787ff 100%
-  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
-  padding-right: 10em;
-  margin-right: -10em;
+  background-image: linear-gradient(
+    180deg,
+    var(--themes-hero-tagline-title-color-1, currentcolor) 5%,
+    var(--themes-hero-tagline-title-color-2, currentcolor) 60%,
+    var(--themes-hero-tagline-title-color-3, currentcolor) 80%,
+    var(--themes-hero-tagline-title-color-4, currentcolor) 90%
+  );
+
+  padding-right: 0.2em;
+  margin-right: -0.2em;
+
+  padding-bottom: 0.2em;
+  margin-bottom: -0.2em;
 }
 
 .ThemesHeroTaglineText {
   font-size: max(30em, 22px);
   font-weight: 500;
-  font-family: Untitled Sans, sans-serif;
   letter-spacing: -0.03em;
   line-height: 1.4;
+  margin: 1em 0;
 }
 
 .ThemesHeroTaglineButton {
   font-size: max(20em, 15px);
   font-weight: 500;
-  font-family: Untitled Sans, sans-serif;
+  font-family: inherit;
   align-items: center;
   display: inline-flex;
   gap: 1em;
   height: 3em;
   padding-left: 1.25em;
   padding-right: 1.25em;
+  margin: 0;
   text-decoration: none;
   border-radius: 0.5em;
   user-select: none;
-  background-color: var(--indigo-12);
-  color: white;
+  background-color: var(--themes-hero-text-color);
+  color: var(--themes-hero-contrast-color);
   white-space: nowrap;
 }
 

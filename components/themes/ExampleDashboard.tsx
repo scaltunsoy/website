@@ -109,7 +109,7 @@ export const ExampleDashboard = () => (
                 </Marker>
                 <Text size="2">Email support</Text>
               </Flex>
-              <Button tabIndex={-1} mt="3" variant="outline">
+              <Button tabIndex={-1} mt="3" variant="surface">
                 Downgrade
               </Button>
             </Flex>
@@ -166,7 +166,7 @@ export const ExampleDashboard = () => (
                 </Marker>
                 <Text size="2">Phone support</Text>
               </Flex>
-              <Button tabIndex={-1} mt="3" variant="outline">
+              <Button tabIndex={-1} mt="3" variant="surface">
                 Go to Billing
               </Button>
             </Flex>
@@ -299,122 +299,120 @@ export const ExampleDashboard = () => (
           <Separator size="4" my="5" />
         </Box>
 
-        <Theme radius="full" applyBackgroundColor={false}>
-          <Flex direction="column">
-            <Flex gap="9" align="start" justify="between">
-              <Box>
-                <Heading as="h4" size="3" mb="1">
-                  Comments
-                </Heading>
-                <Text as="p" size="2" color="gray">
-                  Receive notifications when someone comments on your documents or mentions you.
-                </Text>
-              </Box>
-              <Flex direction="column" gap="4" mt="1">
-                <Label>
-                  <Flex align="center" gap="2">
-                    <Switch tabIndex={-1} defaultChecked />
-                    <Text size="2" weight="bold">
-                      Push
-                    </Text>
-                  </Flex>
-                </Label>
-
-                <Label>
-                  <Flex align="center" gap="2">
-                    <Switch tabIndex={-1} defaultChecked />
-                    <Text size="2" weight="bold">
-                      Email
-                    </Text>
-                  </Flex>
-                </Label>
-
-                <Label>
-                  <Flex align="center" gap="2">
-                    <Switch tabIndex={-1} />
-                    <Text size="2" weight="bold">
-                      Slack
-                    </Text>
-                  </Flex>
-                </Label>
-              </Flex>
-            </Flex>
-
-            <Box style={{ marginTop: -1 }}>
-              <Separator size="4" my="5" />
+        <Flex direction="column">
+          <Flex gap="9" align="start" justify="between">
+            <Box>
+              <Heading as="h4" size="3" mb="1">
+                Comments
+              </Heading>
+              <Text as="p" size="2" color="gray">
+                Receive notifications when someone comments on your documents or mentions you.
+              </Text>
             </Box>
-
-            <Flex gap="9" align="start" justify="between">
-              <Box>
-                <Heading as="h4" size="3" mb="1">
-                  Favorites
-                </Heading>
-                <Text as="p" size="2" color="gray">
-                  Receive notifications when there is activity related to your favorited items.
-                </Text>
-              </Box>
-              <Flex direction="column" gap="4" mt="1">
+            <Flex direction="column" gap="4" mt="1">
+              <Label>
                 <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} defaultChecked />
+                  <Switch tabIndex={-1} defaultChecked radius="full" />
                   <Text size="2" weight="bold">
                     Push
                   </Text>
                 </Flex>
+              </Label>
 
+              <Label>
                 <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} />
+                  <Switch tabIndex={-1} defaultChecked radius="full" />
                   <Text size="2" weight="bold">
                     Email
                   </Text>
                 </Flex>
+              </Label>
 
+              <Label>
                 <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} defaultChecked />
+                  <Switch tabIndex={-1} radius="full" />
                   <Text size="2" weight="bold">
                     Slack
                   </Text>
                 </Flex>
-              </Flex>
+              </Label>
             </Flex>
+          </Flex>
 
-            <Box style={{ marginTop: -1 }}>
-              <Separator size="4" my="5" />
+          <Box style={{ marginTop: -1 }}>
+            <Separator size="4" my="5" />
+          </Box>
+
+          <Flex gap="9" align="start" justify="between">
+            <Box>
+              <Heading as="h4" size="3" mb="1">
+                Favorites
+              </Heading>
+              <Text as="p" size="2" color="gray">
+                Receive notifications when there is activity related to your favorited items.
+              </Text>
             </Box>
-
-            <Flex gap="9" align="start" justify="between">
-              <Box>
-                <Heading as="h4" size="3" mb="1">
-                  New documents
-                </Heading>
-                <Text as="p" size="2" color="gray">
-                  Receive notifications whenever people on your team create new documents.
+            <Flex direction="column" gap="4" mt="1">
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} defaultChecked radius="full" />
+                <Text size="2" weight="bold">
+                  Push
                 </Text>
-              </Box>
-              <Flex direction="column" gap="4" mt="1">
-                <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} defaultChecked />
-                  <Text size="2" weight="bold">
-                    Push
-                  </Text>
-                </Flex>
+              </Flex>
 
-                <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} defaultChecked />
-                  <Text size="2" weight="bold">
-                    Email
-                  </Text>
-                </Flex>
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} radius="full" />
+                <Text size="2" weight="bold">
+                  Email
+                </Text>
+              </Flex>
 
-                <Flex align="center" gap="2">
-                  <Switch tabIndex={-1} defaultChecked={false} />
-                  <Text size="2" weight="bold">
-                    Slack
-                  </Text>
-                </Flex>
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} defaultChecked radius="full" />
+                <Text size="2" weight="bold">
+                  Slack
+                </Text>
               </Flex>
             </Flex>
           </Flex>
-        </Theme>
+
+          <Box style={{ marginTop: -1 }}>
+            <Separator size="4" my="5" />
+          </Box>
+
+          <Flex gap="9" align="start" justify="between">
+            <Box>
+              <Heading as="h4" size="3" mb="1">
+                New documents
+              </Heading>
+              <Text as="p" size="2" color="gray">
+                Receive notifications whenever people on your team create new documents.
+              </Text>
+            </Box>
+            <Flex direction="column" gap="4" mt="1">
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} defaultChecked radius="full" />
+                <Text size="2" weight="bold">
+                  Push
+                </Text>
+              </Flex>
+
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} defaultChecked radius="full" />
+                <Text size="2" weight="bold">
+                  Email
+                </Text>
+              </Flex>
+
+              <Flex align="center" gap="2">
+                <Switch tabIndex={-1} defaultChecked={false} radius="full" />
+                <Text size="2" weight="bold">
+                  Slack
+                </Text>
+              </Flex>
+            </Flex>
+          </Flex>
+        </Flex>
       </Card>
     </Flex>
 
@@ -461,7 +459,7 @@ export const ExampleDashboard = () => (
         </Box>
 
         <Flex mt="6" justify="end" gap="3">
-          <Button tabIndex={-1} variant="outline">
+          <Button tabIndex={-1} variant="surface">
             Create an account
           </Button>
           <Button tabIndex={-1}>Sign in</Button>
@@ -528,7 +526,7 @@ export const ExampleDashboard = () => (
         </Box>
 
         <Flex mt="6" justify="end" gap="3">
-          <Button tabIndex={-1} variant="outline" color="red">
+          <Button tabIndex={-1} variant="surface" color="red">
             Freeze
           </Button>
           <Button tabIndex={-1}>Done</Button>
@@ -561,7 +559,7 @@ export const ExampleDashboard = () => (
         <Flex direction="column" gap="3" align="stretch">
           <Button tabIndex={-1}>Next invoice</Button>
 
-          <Button tabIndex={-1} variant="outline">
+          <Button tabIndex={-1} variant="surface">
             Done
           </Button>
         </Flex>
@@ -658,7 +656,7 @@ export const ExampleDashboard = () => (
         </Grid>
 
         <Flex mt="6" justify="end" gap="3">
-          <Button tabIndex={-1} variant="outline" color="red">
+          <Button tabIndex={-1} variant="surface" color="red">
             Reject
           </Button>
           <Button tabIndex={-1}>Approve</Button>
@@ -1098,7 +1096,7 @@ export const ExampleDashboard = () => (
               <Text size="2" color="gray">
                 NPM
               </Text>
-              <Badge color="gray" variant="outline">
+              <Badge color="gray" variant="surface">
                 0.0%
               </Badge>
             </Flex>

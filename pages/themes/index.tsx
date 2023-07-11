@@ -18,9 +18,9 @@ export default function ThemesHome() {
 
       <MagicCurtain.Root>
         <MagicCurtain.Item>
-          <div className="light-theme" style={{ background: 'none' }}>
+          <div className="light-theme">
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="1">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build faster</ThemesHero.Title>
                 <ThemesHero.Text>
@@ -30,17 +30,23 @@ export default function ThemesHome() {
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
-                <Theme grayScale="mauve" appearance="light" style={{ background: 'none' }}>
+                <Theme
+                  accentScale="indigo"
+                  grayScale="mauve"
+                  appearance="light"
+                  applyBackgroundColor={false}
+                >
                   <ExampleDashboard />
                 </Theme>
               </ThemesHero.Showcase>
             </ThemesHero.Root>
           </div>
         </MagicCurtain.Item>
+
         <MagicCurtain.Item>
-          <div className="dark-theme" style={{ background: 'none' }}>
+          <div className="dark-theme">
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="2">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build better</ThemesHero.Title>
                 <ThemesHero.Text>
@@ -50,19 +56,35 @@ export default function ThemesHome() {
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
-                <Theme grayScale="mauve" appearance="dark" style={{ background: 'none' }}>
+                <Theme
+                  accentScale="indigo"
+                  grayScale="mauve"
+                  appearance="dark"
+                  applyBackgroundColor={false}
+                >
                   <ExampleDashboard />
                 </Theme>
               </ThemesHero.Showcase>
             </ThemesHero.Root>
           </div>
         </MagicCurtain.Item>
+
         <MagicCurtain.Item>
-          <div className="light-theme" style={{ background: 'none' }}>
+          <div
+            className="light-theme"
+            // style={
+            //   {
+            //     '--themes-hero-tagline-title-color-1': '#79E1CC',
+            //     '--themes-hero-tagline-title-color-2': '#DECDE5',
+            //     '--themes-hero-tagline-title-color-3': '#A5B2F2',
+            //     '--themes-hero-tagline-title-color-4': '#889EE8',
+            //   } as React.CSSProperties
+            // }
+          >
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="3">
               <ThemesHero.Tagline>
-                <ThemesHero.Title>Build more</ThemesHero.Title>
+                <ThemesHero.Title>Build nicer</ThemesHero.Title>
                 <ThemesHero.Text>
                   Configurable component library from the Radix team. Move quickly with a suite of
                   beautiful, high-quality components and smooth DX.
@@ -75,7 +97,7 @@ export default function ThemesHome() {
                   grayScale="sand"
                   textColor="auto"
                   appearance="light"
-                  style={{ background: 'none' }}
+                  applyBackgroundColor={false}
                 >
                   <ExampleEcommerce />
                 </Theme>
@@ -83,10 +105,11 @@ export default function ThemesHome() {
             </ThemesHero.Root>
           </div>
         </MagicCurtain.Item>
+
         <MagicCurtain.Item>
-          <div className="dark-theme" style={{ background: 'none' }}>
+          <div className="dark-theme">
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="4">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build cooler</ThemesHero.Title>
                 <ThemesHero.Text>
@@ -101,7 +124,7 @@ export default function ThemesHome() {
                   grayScale="sand"
                   textColor="auto"
                   appearance="dark"
-                  style={{ background: 'none' }}
+                  applyBackgroundColor={false}
                 >
                   <ExampleEcommerce />
                 </Theme>
@@ -109,12 +132,13 @@ export default function ThemesHome() {
             </ThemesHero.Root>
           </div>
         </MagicCurtain.Item>
+
         <MagicCurtain.Item>
-          <div className="light-theme" style={{ background: 'none' }}>
+          <div className="light-theme">
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="5">
               <ThemesHero.Tagline>
-                <ThemesHero.Title>Build more</ThemesHero.Title>
+                <ThemesHero.Title>Build hotter</ThemesHero.Title>
                 <ThemesHero.Text>
                   Configurable component library from the Radix team. Move quickly with a suite of
                   beautiful, high-quality components and smooth DX.
@@ -127,7 +151,7 @@ export default function ThemesHome() {
                   grayScale="slate"
                   textColor="auto"
                   appearance="light"
-                  style={{ background: 'none' }}
+                  applyBackgroundColor={false}
                 >
                   <ExampleMusicApp />
                 </Theme>
@@ -135,12 +159,13 @@ export default function ThemesHome() {
             </ThemesHero.Root>
           </div>
         </MagicCurtain.Item>
+
         <MagicCurtain.Item>
-          <div className="dark-theme" style={{ background: 'none' }}>
+          <div className="dark-theme">
             <ThemesHeader />
-            <ThemesHero.Root>
+            <ThemesHero.Root color="6">
               <ThemesHero.Tagline>
-                <ThemesHero.Title>Build cooler</ThemesHero.Title>
+                <ThemesHero.Title>Build more</ThemesHero.Title>
                 <ThemesHero.Text>
                   Configurable component library from the Radix team. Move quickly with a suite of
                   beautiful, high-quality components and smooth DX.
@@ -153,7 +178,7 @@ export default function ThemesHome() {
                   grayScale="slate"
                   textColor="auto"
                   appearance="dark"
-                  style={{ background: 'none' }}
+                  applyBackgroundColor={false}
                 >
                   <ExampleMusicApp />
                 </Theme>
