@@ -35,13 +35,9 @@ export const ExampleMusicApp = () => (
               Queue
             </Heading>
 
-            <Flex gap="4">
-              <Button m="-3" size="2" variant="ghost">
-                Clear
-              </Button>
-              <Button m="-3" size="2" variant="ghost">
-                Repeat
-              </Button>
+            <Flex gap="4" my="-1">
+              <Button variant="ghost">Clear</Button>
+              <Button variant="ghost">Repeat</Button>
             </Flex>
           </Flex>
         </Box>
@@ -212,11 +208,13 @@ export const ExampleMusicApp = () => (
                 Equalizer
               </Heading>
 
-              <Switch defaultChecked radius="full" size="1" />
+              <Flex my="-1">
+                <Switch defaultChecked radius="full" size="1" style={{ marginTop: 1 }} />
+              </Flex>
             </Flex>
 
-            <Flex mt="1" gap="4">
-              <Button m="-3" size="2" variant="ghost">
+            <Flex my="-1" gap="4">
+              <Button size="2" variant="ghost">
                 Reset
               </Button>
             </Flex>
@@ -272,8 +270,8 @@ export const ExampleMusicApp = () => (
               History
             </Heading>
 
-            <Flex mt="1" gap="4">
-              <Button m="-3" size="2" variant="ghost">
+            <Flex my="-1" gap="4">
+              <Button size="2" variant="ghost">
                 Clear
               </Button>
             </Flex>
@@ -381,17 +379,17 @@ export const ExampleMusicApp = () => (
           </Box>
         </Flex>
 
-        <Flex align="center" position="absolute" top="0" right="0" height="9" mr="4" gap="0">
-          <IconButton size="3" variant="ghost" radius="full">
+        <Flex align="center" position="absolute" top="0" right="0" height="9" mr="4" gap="4">
+          <IconButton size="2" variant="ghost" radius="full">
             <HeartIcon />
           </IconButton>
-          <IconButton size="3" variant="ghost" radius="full">
+          <IconButton size="2" variant="ghost" radius="full">
             <CounterClockwiseClockIcon />
           </IconButton>
-          <IconButton size="3" variant="ghost" radius="full">
+          <IconButton size="2" variant="ghost" radius="full">
             <MixerHorizontalIcon />
           </IconButton>
-          <IconButton size="3" variant="ghost" radius="full">
+          <IconButton size="1" variant="ghost" radius="full" color="gray">
             <Avatar
               size="2"
               radius="full"
@@ -488,7 +486,7 @@ export const ExampleMusicApp = () => (
             />
           </Theme>
           <Flex height="100%" justify="between" position="relative">
-            <Flex gap="2" align="center" p="3">
+            <Flex gap="4" align="center" p="3">
               <IconButton radius="full" size="3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -502,7 +500,7 @@ export const ExampleMusicApp = () => (
                 </svg>
               </IconButton>
 
-              <Flex align="center" gap="1">
+              <Flex align="center" gap="4">
                 <IconButton color="gray" variant="ghost" radius="full" size="2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -753,8 +751,8 @@ export const ExampleMusicApp = () => (
                   Membership
                 </Heading>
 
-                <Flex gap="4">
-                  <Button m="-3" size="2" variant="ghost">
+                <Flex my="-1" gap="4">
+                  <Button size="2" variant="ghost">
                     Done
                   </Button>
                 </Flex>
@@ -827,11 +825,11 @@ export const ExampleMusicApp = () => (
                   Your profile
                 </Heading>
 
-                <Flex mt="1" gap="4">
-                  <Button m="-3" size="2" variant="ghost">
+                <Flex my="-1" gap="4">
+                  <Button size="2" variant="ghost">
                     Cancel
                   </Button>
-                  <Button m="-3" size="2" variant="ghost">
+                  <Button size="2" variant="ghost">
                     Save
                   </Button>
                 </Flex>
@@ -898,7 +896,7 @@ export const ExampleMusicApp = () => (
                 <Text size="2" weight="medium">
                   Danger zone
                 </Text>
-                <Flex direction="column" gap="2">
+                <Flex align="start" direction="column" gap="2">
                   <Link size="2">Reset recommendations</Link>
                   <Link size="2">Delete profile</Link>
                 </Flex>
@@ -913,11 +911,11 @@ export const ExampleMusicApp = () => (
                   Create a playlist
                 </Heading>
 
-                <Flex mt="1" gap="4">
-                  <Button m="-3" size="2" variant="ghost">
+                <Flex my="-1" gap="4">
+                  <Button size="2" variant="ghost">
                     Start over
                   </Button>
-                  <Button m="-3" size="2" variant="ghost">
+                  <Button size="2" variant="ghost">
                     Next
                   </Button>
                 </Flex>

@@ -469,7 +469,7 @@ export const ExampleDashboard = () => (
       </Card>
 
       <Card size="4">
-        <Box position="absolute" top="0" right="0" m="2">
+        <Box position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <Cross2Icon width="20" height="20" />
           </IconButton>
@@ -507,7 +507,7 @@ export const ExampleDashboard = () => (
                 Sophie Johnson
               </Text>
               <Box>
-                <Flex align="center" gap="2" mb="1" mx="3">
+                <Flex align="center" gap="3" mb="1" mx="3">
                   <Text size="2">
                     4929 3849
                     {/* An empty span prevents iOS Safari from thinking it's a telephone number */}
@@ -536,7 +536,7 @@ export const ExampleDashboard = () => (
       </Card>
 
       <Card size="4">
-        <Box position="absolute" top="0" right="0" m="2">
+        <Box position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <Cross2Icon width="20" height="20" />
           </IconButton>
@@ -568,7 +568,7 @@ export const ExampleDashboard = () => (
       </Card>
 
       <Card size="4">
-        <Box position="absolute" top="0" right="0" m="2">
+        <Box position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <Cross2Icon width="20" height="20" />
           </IconButton>
@@ -683,7 +683,7 @@ export const ExampleDashboard = () => (
           </Heading>
         </Box>
 
-        <Flex gap="1" position="absolute" top="0" right="0" m="2">
+        <Flex gap="3" position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <Share2Icon width="20" height="20" />
           </IconButton>
@@ -775,7 +775,7 @@ export const ExampleDashboard = () => (
           </Heading>
         </Box>
 
-        <Flex gap="1" position="absolute" top="0" right="0" m="2">
+        <Flex align="center" gap="3" position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <OpenInNewWindowIcon width="20" height="20" />
           </IconButton>
@@ -1019,7 +1019,7 @@ export const ExampleDashboard = () => (
           </Heading>
         </Box>
 
-        <Flex gap="1" position="absolute" top="0" right="0" m="2">
+        <Flex align="center" gap="3" position="absolute" top="0" right="0" m="3">
           <IconButton tabIndex={-1} variant="ghost" color="gray" highContrast>
             <OpenInNewWindowIcon width="20" height="20" />
           </IconButton>
