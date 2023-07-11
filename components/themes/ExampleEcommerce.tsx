@@ -600,7 +600,7 @@ export const ExampleEcommerce = () => {
         </Card>
       </Flex>
 
-      <Flex shrink="0" gap="6" direction="column" style={{ width: 416 }}>
+      <Flex shrink="0" gap="6" direction="column" style={{ width: 416, scrollSnapAlign: 'center' }}>
         <Card size="2">
           <Flex direction="column" align="center" py="2">
             <Box mb="2">

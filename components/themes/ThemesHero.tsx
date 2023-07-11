@@ -42,11 +42,13 @@ const ThemesHeroButton = ({ children: _, ...props }: React.ComponentPropsWithout
     <span>Get started</span>
     <ArrowRightIcon
       className="ArrowRightIcon"
-      width="20"
-      height="20"
+      width="0"
+      height="0"
       style={{
-        marginTop: '0.1em',
-        marginLeft: '-0.4em',
+        minWidth: '1.25em',
+        minHeight: '1.25em',
+        marginTop: '0.05em',
+        marginLeft: '-0.5em',
         marginRight: '-0.3em',
       }}
     />

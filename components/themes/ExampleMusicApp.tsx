@@ -634,7 +634,12 @@ export const ExampleMusicApp = () => (
       </Card>
 
       <Flex gap="6" shrink="0">
-        <Flex gap="6" shrink="0" direction="column" style={{ width: 416 }}>
+        <Flex
+          gap="6"
+          shrink="0"
+          direction="column"
+          style={{ width: 416, scrollSnapAlign: 'center' }}
+        >
           <Card size="3">
             <Box height="4" mb="4">
               <Heading as="h3" size="4" trim="both">
