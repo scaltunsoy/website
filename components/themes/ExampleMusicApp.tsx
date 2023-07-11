@@ -203,14 +203,16 @@ export const ExampleMusicApp = () => (
       <Card size="3">
         <Box height="4" mb="6">
           <Flex align="center" justify="between">
-            <Flex align="center" gap="3">
-              <Heading as="h3" size="4" trim="both">
-                Equalizer
-              </Heading>
+            <Flex asChild align="center" gap="3">
+              <Label>
+                <Heading as="h3" size="4" trim="both">
+                  Equalizer
+                </Heading>
 
-              <Flex my="-1">
-                <Switch defaultChecked radius="full" size="1" style={{ marginTop: 1 }} />
-              </Flex>
+                <Flex my="-1">
+                  <Switch defaultChecked radius="full" size="1" style={{ marginTop: 2 }} />
+                </Flex>
+              </Label>
             </Flex>
 
             <Flex my="-1" gap="4">
@@ -713,10 +715,10 @@ export const ExampleMusicApp = () => (
                 </Flex>
               </Box>
 
-              <Box mb="1">
+              <Box>
                 <Flex justify="between" gap="5">
                   <Box>
-                    <Text as="div" size="2" weight="medium">
+                    <Text as="div" size="2" weight="medium" mb="1">
                       Crossfade
                     </Text>
                     <Text as="div" color="gray" size="1">
