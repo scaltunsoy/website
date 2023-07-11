@@ -417,7 +417,13 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5" mb="7">
           {songs.slice(2, 7).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
+            <AlbumCard
+              album={song.album}
+              artist={song.artist}
+              cover={song.cover}
+              color={song.color}
+              key={song.name}
+            />
           ))}
         </Grid>
 
@@ -435,7 +441,13 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5" mb="7">
           {songs.slice(0, 5).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
+            <AlbumCard
+              album={song.album}
+              artist={song.artist}
+              cover={song.cover}
+              color={song.color}
+              key={song.name}
+            />
           ))}
         </Grid>
 
@@ -453,7 +465,13 @@ export const ExampleMusicApp = () => (
 
         <Grid columns="5" gap="5">
           {songs.slice(8, 13).map((song) => (
-            <AlbumCard album={song.album} artist={song.artist} cover={song.cover} key={song.name} />
+            <AlbumCard
+              album={song.album}
+              artist={song.artist}
+              cover={song.cover}
+              color={song.color}
+              key={song.name}
+            />
           ))}
         </Grid>
 
@@ -978,27 +996,16 @@ export const ExampleMusicApp = () => (
 
         <Flex gap="6" shrink="0" direction="column" style={{ width: 416 }}>
           <Card size="3">
-            <Flex m="4" align="center" justify="center" position="relative">
-              <Box
-                asChild
-                position="absolute"
-                style={{ filter: 'blur(32px) brightness(1.5) saturate(2)', opacity: 0.5 }}
-              >
-                <img
-                  width="200"
-                  height="200"
-                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--radius-3)' }}
-                />
-              </Box>
-              <Box asChild position="relative">
-                <img
-                  width="200"
-                  height="200"
-                  src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
-                  style={{ borderRadius: 'var(--radius-3)' }}
-                />
-              </Box>
+            <Flex m="4" justify="center" position="relative">
+              <img
+                width="200"
+                height="200"
+                src="https://media.pitchfork.com/photos/59d6ab987855fa6c9a16f2f1/1:1/w_320,c_limit/the%20ooz_king%20krule.jpg"
+                style={{
+                  borderRadius: 'var(--radius-3)',
+                  boxShadow: '0 8px 80px -24px hsl(205, 100%, 50%)',
+                }}
+              />
             </Flex>
 
             <Box mt="5">
@@ -1207,20 +1214,21 @@ export const ExampleMusicApp = () => (
   </Flex>
 );
 
-const AlbumCard = ({ album, artist, cover }: { album: string; artist: string; cover: string }) => (
+const AlbumCard = ({ album, artist, cover, color }: Partial<typeof songs[number]>) => (
   <Hover.Root>
     <Box p="3" m="-3">
-      <Box position="relative" mb="2">
-        <Box position="absolute" inset="0" mt="4" style={{ filter: 'blur(24px)', opacity: 0.2 }}>
-          <AspectRatio ratio={1}>
-            <img src={cover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-          </AspectRatio>
-        </Box>
-
-        <Card>
+      <Box mb="2">
+        <Card style={{ boxShadow: `0 8px 48px -16px ${color.replace('%)', '%, 0.6)')}` }}>
           <Box style={{ margin: 'calc(var(--card-padding) * -1)', cursor: 'pointer' }}>
             <AspectRatio ratio={1}>
-              <img src={cover} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img
+                src={cover}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
             </AspectRatio>
           </Box>
         </Card>
@@ -1262,6 +1270,7 @@ const songs = [
     album: 'Currents',
     length: '3:39',
     cover: 'https://i.pinimg.com/originals/68/d1/26/68d126de72d2dead4920b9e09fa6af8b.jpg',
+    color: 'hsl(339, 80%, 60%)',
   },
   {
     name: 'Pieces',
@@ -1269,6 +1278,7 @@ const songs = [
     album: 'Becoming a Jackal',
     length: '5:25',
     cover: 'https://www.normanrecords.com/artwork/large/99/116349-villagers-becoming-a-jackal.jpg',
+    color: 'hsl(356, 80%, 31%)',
   },
   {
     name: 'Cola',
@@ -1276,6 +1286,7 @@ const songs = [
     album: 'Super Sad Generation',
     length: '3:50',
     cover: 'https://images.genius.com/be8d58aa34e4c0acb093c4833101a773.1000x1000x1.png',
+    color: 'hsl(315, 90%, 70%, 0.2)',
   },
   {
     name: 'Self',
@@ -1283,6 +1294,7 @@ const songs = [
     album: 'Room 25',
     length: '1:35',
     cover: 'https://f4.bcbits.com/img/a1836574169_10.jpg',
+    color: 'hsl(185, 60%, 43%)',
   },
   {
     name: 'Left Hand Free',
@@ -1290,6 +1302,7 @@ const songs = [
     album: 'This Is All Yours',
     length: '2:54',
     cover: 'https://i.scdn.co/image/ab67616d0000b27311b3df35e2e46d91f585afd9',
+    color: 'hsl(330, 70%, 64%)',
   },
   {
     name: 'Last',
@@ -1297,6 +1310,7 @@ const songs = [
     album: 'Broken',
     length: '4:45',
     cover: 'https://i.scdn.co/image/ab67616d0000b273f1234cfed5f06fd58e76b06f',
+    color: 'hsl(30, 100%, 50%)',
   },
   {
     name: '13LACK 13ALLOONZ (feat. Twelve’len & GoldLink)',
@@ -1304,7 +1318,8 @@ const songs = [
     album: 'TA13OO',
     length: '3:31',
     cover:
-      'http://is5.mzstatic.com/image/thumb/Music115/v4/be/83/a0/be83a08f-171f-022c-d6f3-cbf5110492a5/source/100000x100000-999.jpg',
+      'http://is5.mzstatic.com/image/thumb/Music115/v4/be/83/a0/be83a08f-171f-022c-d6f3-cbf5110492a5/source/1000x1000-999.jpg',
+    color: 'hsl(0, 0%, 25%)',
   },
   {
     name: 'Blaxploitation',
@@ -1312,6 +1327,7 @@ const songs = [
     album: 'Room 25',
     length: '2:13',
     cover: 'https://f4.bcbits.com/img/a1836574169_10.jpg',
+    color: 'hsl(185, 60%, 43%)',
   },
   {
     name: 'Trippy (feat. J. Cole)',
@@ -1319,6 +1335,7 @@ const songs = [
     album: 'Oxnard',
     length: '5:24',
     cover: 'https://media.pitchfork.com/photos/5be9b09fa1b4df7cd2613d29/1:1/w_600/oxnard.jpg',
+    color: 'hsl(193, 15%, 45%)',
   },
   {
     name: 'Nightclubbing',
@@ -1327,6 +1344,7 @@ const songs = [
     length: '4:16',
     cover:
       'https://fiu-original.b-cdn.net/fontsinuse.com/use-images/161/161513/161513.jpeg?filename=Iggy%20Pop%20%E2%80%93%20The%20Idiot.jpg',
+    color: 'hsl(34, 7%, 45%)',
   },
   {
     name: 'Heaven Beside You',
@@ -1334,6 +1352,7 @@ const songs = [
     album: 'Alice in Chains',
     length: '5:28',
     cover: 'https://e.snmc.io/i/1200/s/cf90f9e23c6b5bd2a18df298269028d4/1677357',
+    color: 'hsl(289, 3%, 51%)',
   },
   {
     name: 'Night After Night',
@@ -1341,6 +1360,7 @@ const songs = [
     album: 'A Creature I Don’t Know',
     length: '5:08',
     cover: 'https://media.pitchfork.com/photos/5929b0e5b1335d7bf169a1be/1:1/w_600/bae77272.jpg',
+    color: 'hsl(40, 13%, 83%)',
   },
   {
     name: 'HEAVN',
@@ -1349,6 +1369,7 @@ const songs = [
     length: '4:23',
     cover:
       'https://i.discogs.com/trqSgeVgjiKjDE2pJloIHKL5R6nEJkq8Q-yZQiCEL58/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwOTMy/NzkyLTE1MDY3NTgw/MzItNzU3NS5qcGVn.jpeg',
+    color: 'hsl(32, 95%, 67%)',
   },
 ];
 

@@ -218,6 +218,7 @@
   margin-top: 0;
   margin-bottom: 0;
   margin-left: -0.075em;
+  user-select: none;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

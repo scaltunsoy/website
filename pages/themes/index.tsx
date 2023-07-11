@@ -9,6 +9,9 @@ import { MagicCurtain } from '@components/themes/MagicCurtain';
 import { ExampleEcommerce } from '@components/themes/ExampleEcommerce';
 import { ExampleMusicApp } from '@components/themes/ExampleMusicApp';
 
+const text = `Beautiful, open source component library from the Radix team. Made so that you can
+focus on shipping your app. Just import and go.`;
+
 export default function ThemesHome() {
   return (
     <>
@@ -23,10 +26,7 @@ export default function ThemesHome() {
             <ThemesHero.Root color="1">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build faster</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
@@ -49,10 +49,7 @@ export default function ThemesHome() {
             <ThemesHero.Root color="2">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build better</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
@@ -70,25 +67,12 @@ export default function ThemesHome() {
         </MagicCurtain.Item>
 
         <MagicCurtain.Item>
-          <div
-            className="light-theme"
-            // style={
-            //   {
-            //     '--themes-hero-tagline-title-color-1': '#79E1CC',
-            //     '--themes-hero-tagline-title-color-2': '#DECDE5',
-            //     '--themes-hero-tagline-title-color-3': '#A5B2F2',
-            //     '--themes-hero-tagline-title-color-4': '#889EE8',
-            //   } as React.CSSProperties
-            // }
-          >
+          <div className="light-theme">
             <ThemesHeader />
             <ThemesHero.Root color="3">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build nicer</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
@@ -112,10 +96,7 @@ export default function ThemesHome() {
             <ThemesHero.Root color="4">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build cooler</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
@@ -139,10 +120,7 @@ export default function ThemesHome() {
             <ThemesHero.Root color="5">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build hotter</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
@@ -166,10 +144,7 @@ export default function ThemesHome() {
             <ThemesHero.Root color="6">
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build more</ThemesHero.Title>
-                <ThemesHero.Text>
-                  Beautiful, open source component library from the Radix team. Made so that you can
-                  focus on shipping your app. Just import and get going.
-                </ThemesHero.Text>
+                <ThemesHero.Text>{text}</ThemesHero.Text>
                 <ThemesHero.Button />
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
