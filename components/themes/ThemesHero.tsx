@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styles from './ThemesHero.module.css';
 import classNames from 'classnames';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 interface ThemesHeroRootProps extends React.ComponentPropsWithoutRef<'div'> {
   color: '1' | '2' | '3' | '4' | '5' | '6';
@@ -38,7 +39,17 @@ const ThemesHeroText = (props: React.ComponentPropsWithoutRef<'p'>) => (
 
 const ThemesHeroButton = ({ children: _, ...props }: React.ComponentPropsWithoutRef<'a'>) => (
   <a href="/docs/themes" className={styles.ThemesHeroTaglineButton}>
-    Get started <span className={styles.ThemesHeroTaglineButtonArrow} />
+    <span>Get started</span>
+    <ArrowRightIcon
+      className="ArrowRightIcon"
+      width="20"
+      height="20"
+      style={{
+        marginTop: '0.1em',
+        marginLeft: '-0.4em',
+        marginRight: '-0.3em',
+      }}
+    />
   </a>
 );
 

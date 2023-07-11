@@ -250,8 +250,8 @@
   font-size: max(20em, 15px);
   font-weight: 500;
   font-family: inherit;
-  align-items: center;
   display: inline-flex;
+  align-items: center;
   gap: 1em;
   height: 3em;
   padding-left: 1.25em;
@@ -267,19 +267,6 @@
 
 :global(.dark-theme) .ThemesHeroTaglineButton {
   color: var(--blue-1);
-}
-
-.ThemesHeroTaglineButtonArrow {
-  display: block;
-}
-
-.ThemesHeroTaglineButtonArrow::before {
-  content: '->';
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  margin-left: -0.3em;
-  margin-right: -0.3em;
 }
 
 .ThemesHeroShowcase {

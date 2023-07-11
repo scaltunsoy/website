@@ -479,10 +479,10 @@ export const ExampleMusicApp = () => (
               position="absolute"
               style={{
                 overflow: 'hidden',
-                // borderRadius: 'var(--radius-5)',
                 borderRadius: '100px',
                 backgroundColor: 'var(--gray-a11)',
                 filter: 'saturate(0.5) brightness(1.1)',
+                WebkitBackdropFilter: 'blur(24px)',
                 backdropFilter: 'blur(24px)',
               }}
             />
