@@ -101,7 +101,7 @@
 .dark-theme {
   .ThemesHeroRoot.color-red {
     --themes-hero-text-color: var(--pink-12);
-    --themes-hero-soft-color: var(--tomato-6);
+    --themes-hero-soft-color: var(--amber-7);
     --themes-hero-contrast-color: var(--pink-1);
 
     --themes-hero-tagline-title-color-1: #ff4b44;
