@@ -1265,7 +1265,7 @@ export const ExampleEcommerce = () => {
             <Flex direction="column" style={{ minWidth: 140 }}>
               <Select.Root defaultValue="All customers">
                 <Select.Trigger variant="solid" highContrast />
-                <Select.Content container={container} variant="soft">
+                <Select.Content container={container} variant="soft" position="popper">
                   <Select.Item value="All customers">All customers</Select.Item>
                   <Select.Item value={new Date().getFullYear().toString()}>
                     {new Date().getFullYear()}
