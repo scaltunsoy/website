@@ -1,4 +1,4 @@
-import { Box, Theme } from '@radix-ui/themes';
+import { Box, Flex, Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/dist/index.css';
 import * as React from 'react';
 import Head from 'next/head';
@@ -8,6 +8,7 @@ import { ExampleDashboard } from '@components/themes/ExampleDashboard';
 import { MagicCurtain } from '@components/themes/MagicCurtain';
 import { ExampleEcommerce } from '@components/themes/ExampleEcommerce';
 import { ExampleMusicApp } from '@components/themes/ExampleMusicApp';
+import { ArrowRightIcon, ReaderIcon } from '@radix-ui/react-icons';
 
 const text = `
   Beautiful, open source component library from the Radix team.
@@ -29,7 +30,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build faster</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme
@@ -52,7 +62,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build better</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme
@@ -76,7 +95,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build hotter</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme
@@ -100,7 +128,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build nicer</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme
@@ -123,7 +160,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build cooler</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme
@@ -147,7 +193,16 @@ export default function ThemesHome() {
               <ThemesHero.Tagline>
                 <ThemesHero.Title>Build more</ThemesHero.Title>
                 <ThemesHero.Text>{text}</ThemesHero.Text>
-                <ThemesHero.Button />
+                <Flex gap="2">
+                  <ThemesHero.Button variant="solid" href="/docs/themes/overview/getting-started">
+                    Install Themes
+                    <ArrowRightIcon />
+                  </ThemesHero.Button>
+                  <ThemesHero.Button variant="soft" href="/docs/themes/theme/overview">
+                    Read docs
+                    <ReaderIcon />
+                  </ThemesHero.Button>
+                </Flex>
               </ThemesHero.Tagline>
               <ThemesHero.Showcase>
                 <Theme

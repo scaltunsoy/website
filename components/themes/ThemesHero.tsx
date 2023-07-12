@@ -27,21 +27,17 @@ const ThemesHeroText = (props: React.ComponentPropsWithoutRef<'p'>) => (
   <p className={styles.ThemesHeroTaglineText} {...props} />
 );
 
-const ThemesHeroButton = ({ children: _, ...props }: React.ComponentPropsWithoutRef<'a'>) => (
-  <a href="/docs/themes" className={styles.ThemesHeroTaglineButton}>
-    <span>Get started</span>
-    <ArrowRightIcon
-      className="ArrowRightIcon"
-      width="0"
-      height="0"
-      style={{
-        minWidth: '1.25em',
-        minHeight: '1.25em',
-        marginTop: '0.05em',
-        marginLeft: '-0.5em',
-        marginRight: '-0.3em',
-      }}
-    />
+interface ThemesHeroButtonProps extends React.ComponentPropsWithoutRef<'a'> {
+  variant?: 'solid' | 'soft';
+}
+
+const ThemesHeroButton = ({ variant = 'solid', children, ...props }: ThemesHeroButtonProps) => (
+  <a
+    href="/docs/themes"
+    className={classNames(styles.ThemesHeroButton, styles[`variant-${variant}`])}
+    {...props}
+  >
+    {children}
   </a>
 );
 
