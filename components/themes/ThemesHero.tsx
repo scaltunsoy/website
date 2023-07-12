@@ -4,21 +4,11 @@ import classNames from 'classnames';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
 interface ThemesHeroRootProps extends React.ComponentPropsWithoutRef<'div'> {
-  color: '1' | '2' | '3' | '4' | '5' | '6';
+  color: 'blue' | 'green' | 'red';
 }
 
 const ThemesHeroRoot = ({ children, color, ...props }: ThemesHeroRootProps) => (
-  <div
-    className={classNames(styles.ThemesHeroRoot, {
-      [styles['color-1']]: color === '1',
-      [styles['color-2']]: color === '2',
-      [styles['color-3']]: color === '3',
-      [styles['color-4']]: color === '4',
-      [styles['color-5']]: color === '5',
-      [styles['color-6']]: color === '6',
-    })}
-    {...props}
-  >
+  <div className={classNames(styles.ThemesHeroRoot, styles[`color-${color}`])} {...props}>
     <div className={styles.ThemesHeroContent}>{children}</div>
   </div>
 );
