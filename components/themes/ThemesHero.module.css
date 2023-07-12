@@ -16,7 +16,7 @@
 
 .ThemesHeroRoot.color-blue {
   --themes-hero-text-color: var(--indigo-12);
-  --themes-hero-soft-color: var(--indigo-4);
+  --themes-hero-soft-color: var(--indigo-5);
   --themes-hero-contrast-color: var(--indigo-1);
 
   --themes-hero-tagline-title-color-1: #87a3ff;
@@ -33,7 +33,7 @@
 .dark-theme {
   .ThemesHeroRoot.color-blue {
     --themes-hero-text-color: var(--indigo-12);
-    --themes-hero-soft-color: var(--indigo-5);
+    --themes-hero-soft-color: var(--indigo-6);
     --themes-hero-contrast-color: var(--indigo-1);
 
     --themes-hero-tagline-title-color-1: #acbcff;
@@ -50,7 +50,7 @@
 
 .ThemesHeroRoot.color-green {
   --themes-hero-text-color: var(--sage-12);
-  --themes-hero-soft-color: var(--cyan-4);
+  --themes-hero-soft-color: var(--sky-5);
   --themes-hero-contrast-color: var(--sage-1);
 
   --themes-hero-tagline-title-color-1: #00ff71;
@@ -67,7 +67,7 @@
 .dark-theme {
   .ThemesHeroRoot.color-green {
     --themes-hero-text-color: var(--sage-12);
-    --themes-hero-soft-color: var(--cyan-5);
+    --themes-hero-soft-color: var(--sky-6);
     --themes-hero-contrast-color: var(--sage-1);
 
     --themes-hero-tagline-title-color-1: #00ff71;
@@ -84,7 +84,7 @@
 
 .ThemesHeroRoot.color-red {
   --themes-hero-text-color: var(--mauve-12);
-  --themes-hero-soft-color: var(--red-4);
+  --themes-hero-soft-color: var(--tomato-5);
   --themes-hero-contrast-color: var(--mauve-1);
 
   --themes-hero-tagline-title-color-1: #ff0000;
@@ -101,7 +101,7 @@
 .dark-theme {
   .ThemesHeroRoot.color-red {
     --themes-hero-text-color: var(--pink-12);
-    --themes-hero-soft-color: var(--crimson-5);
+    --themes-hero-soft-color: var(--tomato-6);
     --themes-hero-contrast-color: var(--pink-1);
 
     --themes-hero-tagline-title-color-1: #ff4b44;
