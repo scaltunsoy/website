@@ -30,22 +30,20 @@
   --themes-hero-tagline-title-color-4: color(display-p3 0.9 0.55 1 / 1);
 }
 
-.dark-theme {
-  .ThemesHeroRoot.color-blue {
-    --themes-hero-text-color: var(--indigo-12);
-    --themes-hero-soft-color: var(--indigo-6);
-    --themes-hero-contrast-color: var(--indigo-1);
+:global(.dark-theme) .ThemesHeroRoot.color-blue {
+  --themes-hero-text-color: var(--indigo-12);
+  --themes-hero-soft-color: #27376d;
+  --themes-hero-contrast-color: var(--indigo-1);
 
-    --themes-hero-tagline-title-color-1: #acbcff;
-    --themes-hero-tagline-title-color-2: #8299f4;
-    --themes-hero-tagline-title-color-3: #d971ab;
-    --themes-hero-tagline-title-color-4: var(--red-11);
+  --themes-hero-tagline-title-color-1: #acbcff;
+  --themes-hero-tagline-title-color-2: #8299f4;
+  --themes-hero-tagline-title-color-3: #d971ab;
+  --themes-hero-tagline-title-color-4: var(--red-11);
 
-    --themes-hero-tagline-title-color-1: color(display-p3 0.69 0.74 1 / 1);
-    --themes-hero-tagline-title-color-2: color(display-p3 0.53 0.6 1 / 1);
-    --themes-hero-tagline-title-color-3: #d971ab;
-    --themes-hero-tagline-title-color-4: color(display-p3 1 0.43 0.43 / 1);
-  }
+  --themes-hero-tagline-title-color-1: color(display-p3 0.69 0.74 1 / 1);
+  --themes-hero-tagline-title-color-2: color(display-p3 0.53 0.6 1 / 1);
+  --themes-hero-tagline-title-color-3: #d971ab;
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.43 0.43 / 1);
 }
 
 .ThemesHeroRoot.color-green {
@@ -64,22 +62,20 @@
   --themes-hero-tagline-title-color-4: color(display-p3 0.7 0.92 1);
 }
 
-.dark-theme {
-  .ThemesHeroRoot.color-green {
-    --themes-hero-text-color: var(--sage-12);
-    --themes-hero-soft-color: var(--sky-6);
-    --themes-hero-contrast-color: var(--sage-1);
+:global(.dark-theme) .ThemesHeroRoot.color-green {
+  --themes-hero-text-color: var(--sage-12);
+  --themes-hero-soft-color: var(--mint-7);
+  --themes-hero-contrast-color: var(--sage-1);
 
-    --themes-hero-tagline-title-color-1: #00ff71;
-    --themes-hero-tagline-title-color-2: #00e99d;
-    --themes-hero-tagline-title-color-3: #74f0e6;
-    --themes-hero-tagline-title-color-4: #00ecff;
+  --themes-hero-tagline-title-color-1: #00ff71;
+  --themes-hero-tagline-title-color-2: #00e99d;
+  --themes-hero-tagline-title-color-3: #74f0e6;
+  --themes-hero-tagline-title-color-4: #00ecff;
 
-    --themes-hero-tagline-title-color-1: color(display-p3 0 1 0.51);
-    --themes-hero-tagline-title-color-2: color(display-p3 0.26 0.9 0.64);
-    --themes-hero-tagline-title-color-3: color(display-p3 0.58 0.93 0.9);
-    --themes-hero-tagline-title-color-4: color(display-p3 0.12 0.91 1);
-  }
+  --themes-hero-tagline-title-color-1: color(display-p3 0 1 0.51);
+  --themes-hero-tagline-title-color-2: color(display-p3 0.26 0.9 0.64);
+  --themes-hero-tagline-title-color-3: color(display-p3 0.58 0.93 0.9);
+  --themes-hero-tagline-title-color-4: color(display-p3 0.12 0.91 1);
 }
 
 .ThemesHeroRoot.color-red {
@@ -98,22 +94,20 @@
   --themes-hero-tagline-title-color-4: color(display-p3 1 0.63 0.74);
 }
 
-.dark-theme {
-  .ThemesHeroRoot.color-red {
-    --themes-hero-text-color: var(--pink-12);
-    --themes-hero-soft-color: var(--amber-7);
-    --themes-hero-contrast-color: var(--pink-1);
+:global(.dark-theme) .ThemesHeroRoot.color-red {
+  --themes-hero-text-color: var(--pink-12);
+  --themes-hero-soft-color: #713949;
+  --themes-hero-contrast-color: var(--pink-1);
 
-    --themes-hero-tagline-title-color-1: #ff4b44;
-    --themes-hero-tagline-title-color-2: #ff82a6;
-    --themes-hero-tagline-title-color-3: #ff9681;
-    --themes-hero-tagline-title-color-4: #ff965d;
+  --themes-hero-tagline-title-color-1: #ff4b44;
+  --themes-hero-tagline-title-color-2: #ff82a6;
+  --themes-hero-tagline-title-color-3: #ff9681;
+  --themes-hero-tagline-title-color-4: #ff965d;
 
-    --themes-hero-tagline-title-color-1: color(display-p3 1 0.36 0.31);
-    --themes-hero-tagline-title-color-2: color(display-p3 1 0.54 0.65);
-    --themes-hero-tagline-title-color-3: color(display-p3 1 0.61 0.53);
-    --themes-hero-tagline-title-color-4: color(display-p3 1 0.61 0.41);
-  }
+  --themes-hero-tagline-title-color-1: color(display-p3 1 0.36 0.31);
+  --themes-hero-tagline-title-color-2: color(display-p3 1 0.54 0.65);
+  --themes-hero-tagline-title-color-3: color(display-p3 1 0.61 0.53);
+  --themes-hero-tagline-title-color-4: color(display-p3 1 0.61 0.41);
 }
 
 @media (min-width: 500px) {
