@@ -2,6 +2,7 @@ import {
   Badge,
   Box,
   Button,
+  Card,
   Flex,
   Grid,
   Heading,
@@ -15,7 +16,6 @@ import {
   TextField,
   Theme,
 } from '@radix-ui/themes';
-import { Card } from './Card';
 import {
   BookmarkIcon,
   CalendarIcon,

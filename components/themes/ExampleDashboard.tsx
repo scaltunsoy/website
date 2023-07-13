@@ -17,6 +17,7 @@ import {
   Badge,
   Box,
   Button,
+  Card,
   Checkbox,
   Flex,
   Grid,
@@ -30,7 +31,6 @@ import {
   TextField,
   Theme,
 } from '@radix-ui/themes';
-import { Card } from './Card';
 import { Marker } from './Marker';
 import { allPeople, email } from './people';
 

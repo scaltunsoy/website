@@ -1,25 +1,25 @@
 import {
+  AspectRatio,
+  Avatar,
+  Blockquote,
   Box,
-  Text,
   Button,
+  Card,
+  Checkbox,
   Flex,
+  Grid,
   Heading,
+  HoverCard,
+  IconButton,
+  Link,
   Separator,
-  Theme,
   Slider,
   Switch,
-  Grid,
-  IconButton,
-  AspectRatio,
-  Link,
+  Text,
   TextField,
-  Avatar,
-  Checkbox,
-  HoverCard,
-  Blockquote,
+  Theme,
 } from '@radix-ui/themes';
 import { Label } from '@radix-ui/react-label';
-import { Card } from './Card';
 import { Hover } from './Hover';
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { allPeople } from './people';
