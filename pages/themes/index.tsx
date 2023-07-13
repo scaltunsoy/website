@@ -21,9 +21,8 @@ export default function ThemesHome() {
       <Head>
         <meta name="theme-color" content="#FDFCFD" />
         <style>{`
-          div.radix-themes.dark-theme {
+          .radix-themes.dark-theme .rt-Card {
             --color-surface-1: var(--gray-2);
-            --color-surface-1-accent: var(--accent-2);
           }
         `}</style>
       </Head>
